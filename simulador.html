@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+</head>
+<body>
+    <h1>Welcome to the Simulator</h1>
+    <p>This is a simulation environment for climate change and energy transition scenarios.</p>
+    <div id="simulation-controls">
+        <h2>Simulation Controls</h2>
+        <button id="start-simulation">Start Simulation</button>
+        <button id="stop-simulation">Stop Simulation</button>
+    </div>
+    <div id="simulation-output">
+        <h2>Output</h2>
+        <pre id="output-log"></pre>
+    </div>
+    <script>
+        document.getElementById('start-simulation').addEventListener('click', function() {
+            document.getElementById('output-log').textContent += 'Simulation started...\n';
+            // Add simulation code here
+        });
+        document.getElementById('stop-simulation').addEventListener('click', function() {
+            document.getElementById('output-log').textContent += 'Simulation stopped.\n';
+            // Add code to stop simulation here
+        });
+    </script>
+</body>
+</html>
