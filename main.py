@@ -1,0 +1,1 @@
+from fastapi import FastAPI\n\napp = FastAPI()\n\n@app.get("/")\ndef read_root():\n    return {"Hello": "World"}\n\n@app.get("/chatbot/{user_input}")\ndef get_chatbot_response(user_input: str):\n    # Here would be the logic to get a response from the chatbot based on user_input\n    return {"response": f"You said: {user_input}"}
